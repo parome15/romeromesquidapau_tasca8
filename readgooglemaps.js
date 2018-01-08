@@ -18,14 +18,14 @@ function viewJSON() {
         /* Aqui l'objecte response representa l'objecte JSON que ens 
            ha retornat el servidor */
         var str = "<table><tr><th>Nombre</th><th>Direccion</th><th>Latitud</th><th>Longitud</th><th>Tipo de restaurante</th><th>Icono</th>";
-        for(var i= 0; response.resluts.length; i++){
+        for(var i= 0; i<response.results.length; i++){
             str +=
             "<tr><td>"+response.results[i].name+
-            "</tr><td>"+response.results[i].vicinity+
-            "</tr><td>"+response.results[i].geometry.location.lat+
-            "</tr><td>"+response.results[i].geometry.location.lng+
-            "</tr><td>"+response.results[i].types+
-            "</tr><td><img src='"+response.results[i].icon+"'></td></tr>";
+            "</td><td>"+response.results[i].vicinity+
+            "</td><td>"+response.results[i].geometry.location.lat+
+            "</td><td>"+response.results[i].geometry.location.lng+
+            "</td><td>"+response.results[i].types+
+            "</td><td><img src='"+response.results[i].icon+"'></td></tr>";
         }
         str += "</table>";
         
