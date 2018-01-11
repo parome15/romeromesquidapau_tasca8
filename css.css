@@ -1,0 +1,13 @@
+/*  Aqui afegim que les taules i les seves cel·ldes tenguin una linia exterior.
+    I afegim un backgroundColor per al body de la pàgina
+*/
+
+
+table, th, td {
+    border: 1px solid black;
+    background-color: rgb(30, 123, 210);
+}
+
+body{
+    background-color: antiquewhite;
+}
